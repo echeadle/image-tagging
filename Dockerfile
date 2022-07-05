@@ -1,6 +1,10 @@
 FROM basic-base
 
+ARG GIT_COMMIT=unknown
+
 LABEL maintainer=edward
+
+LABEL git-commit=$GIT_COMMIT
 
 CMD mkdir -p /var/www/html/
 
