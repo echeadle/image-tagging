@@ -1,5 +1,7 @@
 FROM basic-base
 
+LABEL maintainer=edward
+
 CMD mkdir -p /var/www/html/
 
 WORKDIR /var/www/html/
